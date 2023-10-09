@@ -56,6 +56,9 @@ function calcular() {
                     resultado = 'Error';
                 }
                 break;
+            case '^':
+                resultado = Math.pow(resultado, siguienteValor);
+                break;
             default:
                 resultado = 'Error';
         }

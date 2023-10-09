@@ -30,6 +30,7 @@ body {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     gap: 10px;
+    grid-template-rows: repeat(5, 1fr);
 }
 
 .botones button {
@@ -49,4 +50,17 @@ body {
 
 .botones button.c {
     background-color: #ff594d;
+}
+
+.botones button.igual {
+    background-color: #555454;
+}
+
+.botones button.grande {
+    grid-column: span 2;
+    font-size: 28px;
+}
+
+.botones button.placeholder {
+    display: none;
 }
