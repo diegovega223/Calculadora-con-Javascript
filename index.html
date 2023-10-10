@@ -11,9 +11,9 @@
         <input type="text" id="pantalla" readonly>
         <div class="botones">
             <button onclick="limpiarPantalla()" class="c">C</button>
-            <button> </button>
-            <button> </button>
-            <button> </button>
+            <button onclick="agregarOperador('x²')">x²</button>
+            <button onclick="agregarOperador('^')">^</button>
+            <button onclick="agregarOperador('√')">√</button>
             <button onclick="agregarOperador('+')" class="operador">+</button>
             <button onclick="agregarValor('7')">7</button>
             <button onclick="agregarValor('8')">8</button>
@@ -29,9 +29,8 @@
             <button onclick="agregarOperador('/')" class="operador">/</button>
             <button onclick="agregarDecimal('.')">.</button>
             <button onclick="agregarValor('0')" class="">0</button>
-            <button> </button>
-            <button onclick="agregarOperador('^')" class="operador">^</button>
-            <button> </button>
+            <button onclick="agregarOperador('+/-')">+/-</button>
+        
             <button onclick="calcular()" class="igual grande">=</button>
           
         </div>

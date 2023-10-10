@@ -59,6 +59,15 @@ function calcular() {
             case '^':
                 resultado = Math.pow(resultado, siguienteValor);
                 break;
+            case 'x²':
+                resultado = Math.pow(resultado, 2);
+                break;
+            case '+/-':
+                resultado = -resultado;
+                break;
+            case '√':
+                resultado = Math.sqrt(resultado); 
+            break;
             default:
                 resultado = 'Error';
         }
