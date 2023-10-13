@@ -68,6 +68,15 @@ function calcular() {
             case '√':
                 resultado = Math.sqrt(resultado); 
             break;
+            case 'sin':
+                resultado = Math.sin(resultado);
+                break;
+            case 'cos':
+                resultado = Math.cos(resultado);
+                break;
+            case 'tan':
+                resultado = Math.tan(resultado);
+                break;
             default:
                 resultado = 'Error';
         }

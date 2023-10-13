@@ -1,15 +1,21 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculadora</title>
-    <link rel="stylesheet" href="css/styles.css"> 
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
     <div class="calculadora">
         <input type="text" id="pantalla" readonly>
         <div class="botones">
+          
+            <button onclick="agregarOperador('sin')">sin</button>
+            <button onclick="agregarOperador('cos')">cos</button>
+            <button onclick="agregarOperador('tan')">tan</button>
             <button onclick="limpiarPantalla()" class="c">C</button>
             <button onclick="agregarOperador('x²')">x²</button>
             <button onclick="agregarOperador('^')">^</button>
@@ -31,11 +37,14 @@
             <button onclick="agregarValor('0')" class="">0</button>
             <button onclick="agregarOperador('+/-')">+/-</button>
         
+
+
             <button onclick="calcular()" class="igual grande">=</button>
-          
+
         </div>
     </div>
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
