@@ -55,6 +55,7 @@ function calcular() {
                 } else {
                     resultado = 'Error';
                 }
+                
                 break;
             case '^':
                 resultado = Math.pow(resultado, siguienteValor);
@@ -76,6 +77,9 @@ function calcular() {
                 break;
             case 'tan':
                 resultado = Math.tan(resultado);
+                break;
+                case '%':
+                resultado = (resultado * siguienteValor) / 100;
                 break;
             default:
                 resultado = 'Error';
